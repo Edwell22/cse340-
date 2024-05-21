@@ -10,7 +10,7 @@
             "server": "localhost",
             "driver": "PostgreSQL",
             "name": "render.com",
-            "connectString": "postgres://kings340:Vc7ybxkZ2aMvV3FFbqK99An5ZwID8aMZ@dpg-cp4nran79t8c73eir2m0-a.oregon-postgres.render.com/kings340"
+            "connectString": "postgres://kings349db:VowjTw29SstUA7E8rHunOcWBwZXBtd9l@dpg-cp609skf7o1s739n86gg-a.oregon-postgres.render.com/kings349db_81bz"
         }
     ],
     "terminal.integrated.stickyScroll.maxLineCount": 10
