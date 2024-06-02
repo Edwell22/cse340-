@@ -7,11 +7,15 @@
                 }
             },
             "previewLimit": 50,
-            "server": "localhost",
+            "server":"dpg-cp609skf7o1s739n86gg-a.oregon-postgres.render.com" ,
+            "port": 5432,
             "driver": "PostgreSQL",
             "name": "render.com",
-            "connectString": "postgres://kings349db:VowjTw29SstUA7E8rHunOcWBwZXBtd9l@dpg-cp609skf7o1s739n86gg-a.oregon-postgres.render.com/kings349db_81bz"
+            "database": "kings349db_81bz",
+            "username": "kings349db",
+            "password": "VowjTw29SstUA7E8rHunOcWBwZXBtd9l",
+            
         }
     ],
-    "terminal.integrated.stickyScroll.maxLineCount": 10
+    
 }

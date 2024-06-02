@@ -1,9 +1,11 @@
-
+const utilities = require("./utilities");
+const baseController = require("./controllers/baseController");
 const express = require('express');
 const app = express();
 const path = require ('path');
 const expressLayouts = require ('express-ejs-layouts');
 const { title } = require('process');
+const inventoryRoute = require("./routes/inventoryRoute")
 
 // Set EJS as the  view engine and use layouts
 app.set('view engine', 'ejs') ;
@@ -19,12 +21,35 @@ app.set('layout', 'layouts/layout');
 app.get('/', (req, res) => {
   res.render('index', { title: 'Home Page'});
 });
-
-
+// Inventory routes
+app.use("/inv", inventoryRoute);
 
 app.get('/about', (req, res) => {
   res.render('about', { title: 'About Us'});
 });
+
+// Index route
+app.get("/", utilities.handleErrors(baseController.buildHome));
+
+
+// File Not Found Route - must be last route in list
+app.use(async (req, res, next) => {
+  next({status: 404, message: 'Sorry, we appear to have lost that page.'})
+})
+
+/* ***********************
+* Express Error Handler
+* Place after all other middleware
+*************************/
+app.use(async (err, req, res, next) => {
+  let nav = await utilities.getNav()
+  console.error(`Error at: "${req.originalUrl}": ${err.message}`)
+  res.render("errors/error", {
+    title: err.status || 'Server Error',
+    message: err.message,
+    nav
+  })
+})
 
 //Start the server
 const PORT =  5500;
