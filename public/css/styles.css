@@ -3,342 +3,853 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
+#navigation a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+#wrapper {
+  max-width: 90%;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(93, 148, 211);
+}
+
+#top-header {
+  margin: 10px;
+  padding: 5px;
+}
+
+.siteName {
+  font-family: 'Helvetica' , sans-serif;
+  font-size: 2rem;
+}
+
+.siteName a {
+  text-decoration: none;
+}
+
+#tools {
+  float: right;
+  margin-right: calc(5% - 25px);
+  margin-top: calc(4% - 10px);
+  font-size: .8rem;
+}
+
+#tools a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#tools, #navigation, .nav {
+  font-family: 'Nixie One', system-ui;
+}
+
+#navigation ul {
+  list-style: none;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#navigation ul li {
+  color: white;
+  font-weight: 700;
+  font-size: .9rem;
 }
 
 h1, h2 {
-  color: #176B87;
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  margin: 30px;
-  line-height: 1.5rem;
+  font-family: 'Arial', sans-serif;
 }
 
-h3, h4 {
-  font-family: 'Bebas Neue', sans-serif;
-  color: #04364A;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin: 30px;
-  font-weight: 400;
-}
-p {
-  padding: 20px;
-  color: #04364A;
-}
-a {
-  color: #04364A;
-  text-decoration: none;
-  padding: 10px;
-}
-main, header, footer {
-  margin: 0 auto;
-  word-wrap: break-word;
+li, #errorMessage {
+  font-family: 'Arial', sans-serif;
 }
 
-
-/* header */
-#top-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-  padding: 10px 0;
-  height: auto;
-  position: sticky;
-  z-index: 1;
-  background-color: #f2f9f9;
-  top: 0;
-  width: 100%;
+#errorImage {
+  width: 50%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
 }
-.logo {
-  /* display: none; */
-  font-family: 'Bebas Neue', sans-serif;
+
+#errorMessage {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hero-banner {
+  margin: 15px;
+}
+
+.hero-banner h1 {
   font-size: 2rem;
-  font-weight: 400;
+}
+
+.container {
+  position: relative;
+}
+
+.hero-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 15px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.hero-info h2 {
+  margin: 0;
+  padding: 0;
+  color: rgb(50, 133, 172);
+  text-shadow: 1px 1px 1px rgb(6, 121, 101); 
+  font-size: 1.15rem;
+}
+
+.action {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(20, 123, 219);
+  text-shadow: 1px 1px 1px rgb(8, 99, 91); 
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.hero-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-car-info li {
+  font-size: 1rem;
+}
+
+.review-header {
+  margin: 15px;
+  padding-top: 15px;
+}
+
+.review-list ul{
+  padding: 0;
+  margin: 0;
+}
+
+.review-list li {
+  font-size: 0.95rem;
+}
+
+.link-boxes {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.links {
+  margin: 10px;
+}
+
+.link-box {
+  background-color:rgba(219, 217, 217, 0.5);
+  height: 100px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figcaption {
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#contentHeader, #errorHeader {
+  font-family: 'Arial', sans-serif;
+  
+}
+
+#contentHeader {
+  font-size: 3rem;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+
+#errorHeader {
+  font-size: 2rem;
+  margin: 7px;
+  padding-left: 7px;
+
+}
+
+#inv-display {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-display img {
+  border-radius: 10px;
+}
+
+.grid-display hr {
+  width: 75%;
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+
+.grid-display {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(11, 81, 138);
+  border-radius: 7px;
+}
+
+.namePrice {
+  line-height: 1rem;
+}
+
+.priceField {
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+}
+
+.grid-display a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+}
+
+#vehicle-info {
+  margin: 20px;
+}
+
+#vehicle {
+  margin-left: 20px;
+}
+
+#vehicle-info img {
+  width: 95%;
+  border-radius: 5px;
+}
+
+.vehicleInfo {
+  width: 95%;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.price {
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+}
+
+.description, .vehicleColor, .vehicleMiles {
+  font-family: 'Arial', sans-serif;
+}
+
+.notice {
+  list-style: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color:red;
+}
+
+#login {
+  font-family: 'Arial', sans-serif;
+  margin: 10px;
+}
+
+.login {
+  width: 75%;
+  background-color: hsl(0, 3%, 14%);
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#login-form {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  line-height: 1.75rem;
   text-align: left;
 }
 
-/* navigation */
-nav {
-  background-color: #04364A;
-  color: #f2f9f9;
-  margin: 0 auto;
-  position: sticky;
-  top: 55px;
-  z-index: 1;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-	margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav li {
-	display: block;
-	color: #f2f9f9;
-	text-align: left;
-	padding: 1rem;
-	text-decoration: none;
-  transition: 0.5s;
- font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-
-/* main */
-main {
-  padding: 0;
-  margin: 0 auto;
-}
-/* Hero section */
-#hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  margin-top: 20px;
-}
-#hero h1 {
-  margin: 20px 20px 20px 20px;
-}
-#hero .bg {
-  z-index: -1;
-  position: absolute;
+.inputLength {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.hero-info {
-  color: #04364A;
-  background: rgba(211, 238, 247, 0.838);
-  margin-left: 15px;
-  margin-bottom: 100px;
-  max-width: 200px;
-  padding: 10px;
-  align-items: center;
-}
-.hero-info h2 {
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  margin: 0;
-}
-.hero-info ul {
-  list-style: none;
-  font-size: 11px;
-}
-.btn {
-  margin-top: 5px;
-  height: 30px;
-}
-.btn:hover {
-  filter: saturate(.5);
-  cursor: pointer;
 }
 
-#after-hero {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-top: 20px;
-}
-.reviews {
-  padding-left: 20px;
-}
-.reviews h2,
-.upgrades h2 {
-  font-size: 1.8rem;
-  margin: 0;
-  display: block;
-}
-.reviews ul {
-  list-style-type: disc;
-  padding: 10px;
-  line-height: 2rem;
-  color: #04364A;
+#login-form input {
+  padding: 7px;
+  border-radius: 5px;
+  margin: 7px auto;
+  
 }
 
-.upgrades {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.upgrades h2 {
-  margin-bottom: 10px;
-}
-
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-.upgrade {
+.button {
   text-align: center;
-  align-items: center;
-  width: 50%;
-}
-.upgrade img {
-  background-color: #176B87;
-}
-.card {
-  background-color: #176B87;
-  padding: 10px;
-  margin: 15px 5px 0 5px;
-  height: 89px;
-}
-.upgrade a {
-  display: block;
 }
 
-.upgrade a:hover {
-  color: #176B87;
+.login-button {
+  margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.25rem;
+  width: 60%;
   cursor: pointer;
 }
 
+.login-break {
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 3px;  
+  margin-top: 0;
+}
 
+.registration {
+  font-family: 'Nixie One', system-ui;
+  color: white;
+}
 
-/* ***************************************************
-******************************************
-MEDIA QUERY
-******************************************
-****************************************** */
-@media (min-width: 768px) {
+.registration a {
+  color: white;
+}
+
+#register {
+  margin-left: 15px;
+}
+
+.inputRequirements {
+  font-family: 'Arial', sans-serif;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+
+#registration {
+  width: 90%;
+  background-color: hsl(0, 3%, 7%);
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#registration-form {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+.inputLength {
+  width: 100%;
+}
+
+#registration-form input {
+  padding: 7px;
+  border-radius: 5px;
+  margin: 7px auto;
+  
+}
+
+.button {
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.register-button {
+  margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 60%;
+  cursor: pointer;
+}
+
+.passwordRequirements {
+  padding: 0;
+  margin: 0;
+}
+
+.passwordRequirements li {
+  list-style: circle;
+  margin-left: 15px;
+}
+
+.add-inventory, .add-classification, .edit-inventory {
+  width: 95%;
+  background-color:#000000;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.newInv, .editInv {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5rem;
+  padding: 10px;
+  margin: 5px;
+}
+
+.newInv legend, .editInv legend {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  padding-top: 6px;
+  margin-top: 6px;
+}
+
+.newInv input, .editInv input {
+  width: 90%;
+  padding: 7px;
+}
+
+.newInvButton, .newClassButton, .editInvButton {
+  font-family: 'Times New Roman' , serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.newInvClass {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.25rem;
+  height: 25px;
+  overflow-y: scroll;
+}
+
+#newClass a, #addCar a {
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#newClass, #addCar {
+  text-align: center;
+  padding: 10px;
+  background-color:rgb(0, 0, 0);
+  width: 75%;
+  margin: 15px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.newClass {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5rem;
+  padding: 10px;
+  margin: 5px;
+}
+
+.newClass input {
+  width: 90%;
+  padding: 7px;
+}
+
+.newClass legend {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  padding-top: 6px;
+  margin-top: 6px;
+}
+
+footer {
+  font-family: 'Nixie One', system-ui;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  
   body {
-    /* background: url("/images/site/small_check.png") repeat center center/cover; */
-    background-image: linear-gradient(45deg, #000 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #000 75%),
-    linear-gradient(45deg, transparent 75%, #000 75%),
-    linear-gradient(45deg, #000 25%, #fff 25%);
-    background-size: 100px 100px;
-    background-position: 0 0, 0 0, -50px -50px, 50px 50px;
+    background-image: url('../images/site/small_check.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
-  #wrapper {
-    margin: 20px auto;
-    max-width: 900px;
-    background: #f2f9f9;
-    border: #176B87 5px solid;
-    border-radius: 20px;
-  }
-  #home {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* header */
-  #top-header {
-    border-radius: 20px 20px 0 0;
-    /* background-color: #eafffd; */
-    z-index: 3;
-  }
-  .logo {
+  
+  .siteName {
     font-size: 3rem;
-    margin-left: 10px;
   }
-
+  
   #tools {
-    margin-right: 10px;
+    font-size: 1rem;
   }
-
-  /* navigation */
-  nav {
-    top: 77.5px;
-    z-index: 3;
+  
+  #navigation ul li {
+    font-size: 1.15rem;
   }
-
-  nav ul {
-    flex-direction: row;
-  }
-
-  nav li {
-    padding: 1rem 3rem;
-  }
-
-  nav ul li:hover {
-    color: #176B87;
-    background-color: #eafffd;
-    cursor: pointer;
-  }
-
-  /* main */
-  /* Hero section */
-  #hero {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    height: 100%;
-  }
-  #hero h1 {
-    z-index: 2;
-    margin: 10px 20px 40px 20px;
-    font-size: 3rem;
-  }
-
-  #hero .bg {
-    z-index: 1;
-    margin: 0;
-    mix-blend-mode: multiply;
+  
+  .hero-banner h1 {
+    font-size: 2.5rem;
   }
   
   .hero-info {
-    z-index: 2;
-    margin-left: 15px;
-    margin-bottom: 140px;
-  }
-  .hero-info h2 {
-    font-size: 2rem;
-    margin: 10px 5px;
-  }
-  .hero-info ul {
-    font-size: 1rem;
-    margin-left: 5px;
-  }
-  .btn {
-    margin-top: 20px;
-    height: 40px;
-  }
-
-  #after-hero {
-    flex-grow: 1;
-    flex-direction: row;
-    padding: 20px;
-    justify-content: space-between;
-  }
-  .reviews {
-    padding: 0;
-    width: 48%;
+    left: 25px;
   }
   
-  .reviews ul {
-    margin-top: 15px;
-    padding-top: 10px;
-    line-height: 1.3rem;
+  .hero-info h2 { 
+    font-size: 1.75rem;
   }
-
-  .reviews li {
-    padding-bottom: 10px;
-  }
-
-  .upgrades {
+  
+  .hero-info ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    width: 48%;
+  }
+  
+  .hero-car-info li {
+    font-size: 1.2rem;
   }
 
-  .upgrades h2 {
+  .action {
+    font-size: 1.25rem;
+  }
+  
+  .bottom-info {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .reviews {
+    width: 315px;
+  }
+
+  .links {
+    width: 325px;
+    order: -1;
+  }
+
+  .review-header, .link-header {
+    font-size: 1.15rem;
+  }
+
+  .review-list ul {
+    padding: 0;
+  }
+
+  .review-list li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .link-boxes {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .links {
+    margin-top: 10px;
+    margin-left: 10px;
     margin-bottom: 10px;
   }
+  
+  .link-box {
+    background-color:rgba(219, 217, 217, 0.5);
+    height: 75px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+  
+  figcaption {
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
+  .grid-display a {
+    font-size: 1.5rem;  
+  }
+
+  .priceField {
+    font-size: 1.5rem;
+  }
+
+  .grid-display {
+    padding: 20px;
+    margin: 30px;
+  }
+
+  #errorMessage {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  #errorHeader {
+    font-size: 2rem;
+    margin: 10px;
+    padding-left: 7px;
+  }
+
+  .notice {
+    font-size: 1.3rem;
+  }
+
+  .inputLength {
+    width: 85%;
+  }
+
+  .login-button {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 50%;
+  }
+
+  #register {
+    margin-left: 30px;
+  }
+  
+  .inputRequirements {
+    margin-left: 25px;
+  }
+
+  .add-inventory, .add-classification {
+    width: 75%;
+    background-color:#000000;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+  #newClass, #addCar {
+    width: 50%;   
+  }
 
 }
+
+  @media only screen and (min-width: 1024px)  {
+
+    #wrapper {
+      max-width: 90%;
+    }
+    
+    .siteName {
+      font-size: 4rem;
+    }
+    
+    #tools {
+      font-size: 1.25rem;
+    }
+    
+    #navigation ul li {
+      font-size: 1.75rem;
+    }
+    
+    .hero-banner h1 {
+      font-size: 3.25rem;
+    }
+    
+    .hero-info {
+      left: 75px;
+    }
+    
+    .hero-info h2 { 
+      font-size: 2.25rem;
+    }
+    
+    .hero-car-info li {
+      font-size: 1.75rem;
+    }
+  
+    .action {
+      font-size: 2rem;
+    }
+    
+    .review-header, .link-header {
+      font-size: 1.75rem;
+    }
+  
+    .review-list ul {
+      padding: 0;
+    }
+  
+    .review-list li {
+      font-size: 1.75rem;
+      line-height: 3rem;
+    }
+    
+    figcaption {
+      font-size: 1.5rem;;
+    }
+
+    .links, .reviews {
+      width: 500px;
+      padding-left: 25px;
+      justify-content: space-around;
+    }
+  
+    .link-box {
+      height: 125px;
+      width: 175px;
+    }
+
+    #inv-display {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+    }
+    
+    .grid-display {
+      padding: 20px;
+      margin: 10px;
+    }
+    
+    .namePrice {
+      line-height: 2rem;
+    }
+    
+    .grid-display a {
+      font-size: 2.5rem;
+    }
+
+    .priceField {
+      font-size: 2.5rem;
+    }
+
+    #vehicle-info {
+      display: flex;
+    }
+    
+    #vehicle {
+      margin-left: 20px;
+    }
+    
+    #vehicle-info img {
+      width: 95%;
+      border-radius: 5px;
+    }
+    
+    .vehicleInfo {
+      width: 95%;
+      border: 2px solid black;
+      border-radius: 2px;
+    }
+    
+    .description, .vehicleColor, .vehicleMiles {
+      margin-left: 10px;
+    }
+
+    .vehicle-display {
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    .price {
+      font-size: 2rem;
+      margin-left: 10px;
+    }
+
+    #errorImage {
+      display: grid;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #errorMessage {
+      text-align: center;
+      font-size: 2rem;
+    }
+    
+    #errorHeader {
+      font-size: 3rem;
+      margin: 8px;
+      padding-left: 15px;
+    
+    }
+
+    .notice {
+      font-size: 1.75rem;
+    }
+
+    .login {
+      width: 50%;
+    }
+
+    .inputLength {
+      width: 90%;
+    }
+
+    #register {
+      margin-left: 40px;
+    }
+    
+    .inputRequirements {
+      font-size: 1.25rem;
+      margin-left: 35px;
+    }
+
+    #login {
+      font-size: 3rem;
+    }
+
+    #registration-form {
+      font-size: 1.5rem;
+      
+    }
+
+    #newClass, #addCar {
+      width: 45%;   
+    }
+
+    .add-classification {
+      width: 50%;
+    }
+
+    .newClassButton {
+      width: 45%;
+    }
+
+  }

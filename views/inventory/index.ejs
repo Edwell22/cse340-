@@ -1,0 +1,28 @@
+<!-- Content Heading -->
+<% if (title) { %>
+    <h1 id="management"><%= title %></h1>
+<% } else {
+    res.redirect('/')
+} %>
+
+<!-- Message -->
+<%- messages() %>
+
+<!-- Links -->
+<div id="newClass">
+    <%- newClass %>
+</div>
+<div id="addCar">
+<%- addCar %>
+</div>
+
+<!-- Manage Inventory -->
+<h2>Manage Inventory</h2>
+<p><i>Choose a classification to see those inventory items.</i></p>
+<%- classificationSelect %>
+
+<table id="inventoryDisplay"></table>
+
+<noscript>JavaScript must be enabled to use this page.</noscript>
+
+<script src="../../js/inventory.js"></script>

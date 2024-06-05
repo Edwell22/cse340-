@@ -1,6 +1,6 @@
 <!-- Content Heading -->
 <% if (title) { %>
-<h1 id="contentHeader"><%= title %></h1>
+    <h1 id="vehicle"><%= title %></h1>
 <% } else {
     res.redirect('/')
 } %>
@@ -9,4 +9,4 @@
 <%# messages() %>
 
 <!-- Inventory Items -->
-<%- grid %>
+<%- buildArea %>

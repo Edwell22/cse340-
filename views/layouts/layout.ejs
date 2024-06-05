@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %> | CSE 340 App</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+    <%- include('../partials/head') %>
 
+<body>
+    <div id="wrapper">
+        <%- include('../partials/header') %>
+        <%- include('../partials/navigation') %>
 
-    <body>
-        <div id="wrapper">
-        
-        
+        <main>
+            <%- body %>
+        </main>
 
-            <main>
-                <%- body %>
-            </main>
-
-       
-        </div>
-    </body>
+        <%- include('../partials/footer') %>
+    </div>
+</body>
 </html>

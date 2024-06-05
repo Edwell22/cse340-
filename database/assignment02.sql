@@ -1,4 +1,7 @@
---1)
+-- CSE 340, BYU-Idaho, Spring 2024
+-- Edwell Kakunguwo
+-- Assignment #2
+-- Query #1)
 INSERT INTO public.account(
         account_firstname,
         account_lastname,
