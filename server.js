@@ -5,20 +5,20 @@
 /* ***********************
  * Require Statements
  *************************/
-const express = require("express");
-const expressLayouts = require("express-ejs-layouts");
-const env = require("dotenv").config();
-const app = express();
-const static = require("./routes/static");
-const baseController = require("./controllers/baseController");
-const inventoryRoute = require("./routes/inventoryRoute");
-const utilities = require("./utilities/");
-const errorController = require("./controllers/errorController");
-const session = require("express-session");
-const pool = require('./database/');
-const accountRoute = require("./routes/accountRoute");
-const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
+const express = require("express")
+const expressLayouts = require("express-ejs-layouts")
+const env = require("dotenv").config()
+const app = express()
+const static = require("./routes/static")
+const baseController = require("./controllers/baseController")
+const inventoryRoute = require("./routes/inventoryRoute")
+const utilities = require("./utilities/")
+const errorController = require("./controllers/errorController")
+const session = require("express-session")
+const pool = require('./database/')
+const accountRoute = require("./routes/accountRoute")
+const bodyParser = require("body-parser")
+const cookieParser = require("cookie-parser")
 
 /* *****************************
  * Middleware
@@ -48,9 +48,6 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 // Login Middleware
 app.use(cookieParser())
 app.use(utilities.checkJWTToken)
-
-// //Check authentication validity
-// app.use(authMiddleware)
 
 /* ***********************
  * View Engine and Templates
@@ -90,7 +87,7 @@ app.use(async (err, req, res, next) => {
     title: err.status || 'Server Error',
     imageHtml,
     message,
-    nav
+    nav,
   })
 })
 
