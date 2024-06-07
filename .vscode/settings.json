@@ -1,21 +1,16 @@
 {
     "sqltools.connections": [
-        {
-            "pgOptions": {
-                "ssl": {
-                    "rejectUnauthorized": true
-                }
-            },
-            "previewLimit": 50,
-            "server":"dpg-cp609skf7o1s739n86gg-a.oregon-postgres.render.com" ,
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "render.com",
-            "database": "kings349db_81bz",
-            "username": "kings349db",
-            "password": "VowjTw29SstUA7E8rHunOcWBwZXBtd9l",
-            
-        }
-    ],
-    
-}
+      {
+        "pgOptions": {
+          "ssl": {
+            "rejectUnauthorized": true
+          }
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "driver": "PostgreSQL",
+        "name": "render.com",
+        "connectString": "postgres://kings349db:VowjTw29SstUA7E8rHunOcWBwZXBtd9l@dpg-cp609skf7o1s739n86gg-a.oregon-postgres.render.com/kings349db_81bz"
+      }
+    ]
+  }
