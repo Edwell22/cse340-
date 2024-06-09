@@ -86,7 +86,7 @@ Util.buildVehicleInfo = async function(data) {
         })
         grid += '</div>'
     } else {
-        grid += '<p class="notice">Sorry, no matcing vehicles could be found.</p>'
+        grid += '<p class="notice">Sorry, no matching vehicles could be found.</p>'
     }
     return grid
 }

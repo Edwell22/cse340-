@@ -30,7 +30,7 @@ router.post(
 router.get(
     "/", 
     utilities.checkLogin, 
-    utilities.handleErrors(accountController.buildAccountMgmtView)
+    utilities.handleErrors(accountController.buildAccountView)
 )
 
 // Route for getting the account update form
